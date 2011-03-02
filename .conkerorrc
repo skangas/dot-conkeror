@@ -144,4 +144,4 @@ function content_handler_save_in (path, inhibit_prompt) {
 }
 
 content_handlers.set("application/x-bittorrent",
-                     content_handler_save_in("/home/skangas/download/torrents/"));
+                     content_handler_save_in("~/download/torrents/"));
