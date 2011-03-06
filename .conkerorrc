@@ -54,9 +54,10 @@ define_webjump("cpan", "http://search.cpan.org/search?query=%s&mode=all");
 define_webjump("youtube", "http://www.youtube.com/results?search_query=%s&search=Search");
 define_webjump("trans", "http://translate.google.com/translate_t#auto|en|%s");
 define_webjump("isohunt", "http://isohunt.com/torrents/?ihq=%s")
+define_webjump("scroogle", "https://ssl.scroogle.org/cgi-bin/nbbwssl.cgi?Gw=%s");
 
 // XXX: this isn't officially supported, but it works for now
-webjumps["g"] = webjumps["google"];
+webjumps["g"] = webjumps["scroogle"];
 webjumps["gl"] = webjumps["lucky"];
 webjumps["y"] = webjumps["youtube"];
 
