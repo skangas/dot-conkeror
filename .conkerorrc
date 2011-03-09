@@ -31,7 +31,7 @@ minibuffer_auto_complete_default = true;
 session_auto_save_auto_load = true;
 
 // have the find-url prompt included history urls in its completions
-url_completion_use_history = true;
+url_completion_use_history = false;
 
 // use a single window, even when external programs open a url in conkeror
 url_remoting_fn = load_url_in_new_buffer;
