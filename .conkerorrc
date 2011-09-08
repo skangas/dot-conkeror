@@ -2,7 +2,7 @@
 
 require("new-tabs.js");
 require("session.js");
-//require("favicon"); // XXX: added to conkeror 2010-12-29, not in squeeze
+// require("favicon"); // XXX: added to conkeror 2010-12-29, not in squeeze
 
 //// User Variables http://conkeror.org/UserVariables
 
