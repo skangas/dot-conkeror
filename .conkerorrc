@@ -55,11 +55,14 @@ define_webjump("youtube", "http://www.youtube.com/results?search_query=%s&search
 define_webjump("trans", "http://translate.google.com/translate_t#auto|en|%s");
 define_webjump("isohunt", "http://isohunt.com/torrents/?ihq=%s")
 define_webjump("scroogle", "https://ssl.scroogle.org/cgi-bin/nbbwssl.cgi?Gw=%s");
+define_webjump("wikipedia_sv", "http://sv.wikipedia.org/w/index.php?title=Special%3AS%C3%B6k&search=%s");
 
 // XXX: this isn't officially supported, but it works for now
 webjumps["g"] = webjumps["scroogle"];
 webjumps["gl"] = webjumps["lucky"];
 webjumps["y"] = webjumps["youtube"];
+webjumps["w"] = webjumps["wikipedia"];
+webjumps["ws"] = webjumps["wikipedia_sv"];
 
 //// Open Middle-Clicked Links in New Buffers
 
