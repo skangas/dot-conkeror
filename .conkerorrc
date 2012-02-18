@@ -58,7 +58,8 @@ define_webjump("scroogle", "https://ssl.scroogle.org/cgi-bin/nbbwssl.cgi?Gw=%s")
 define_webjump("wikipedia_sv", "http://sv.wikipedia.org/w/index.php?title=Special%3AS%C3%B6k&search=%s");
 
 // XXX: this isn't officially supported, but it works for now
-webjumps["g"] = webjumps["scroogle"];
+webjumps["g"] = webjumps["google"];
+// webjumps["g"] = webjumps["scroogle"];
 webjumps["gl"] = webjumps["lucky"];
 webjumps["y"] = webjumps["youtube"];
 webjumps["w"] = webjumps["wikipedia"];
