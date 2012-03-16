@@ -4,6 +4,13 @@ require("new-tabs.js");
 require("session.js");
 // require("favicon"); // XXX: added to conkeror 2010-12-29, not in squeeze
 
+
+// function my_prefs () {
+// openDialog("chrome://browser/content/pref/pref.xul", "PrefWindow", "chrome,titlebar,resizable,modal", "catFeaturesbutton");
+// }
+
+// add_command("prefs", my_prefs, []);
+
 //// User Variables http://conkeror.org/UserVariables
 
 // Don't let kill-buffer close the window
