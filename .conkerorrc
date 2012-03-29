@@ -120,7 +120,7 @@ interactive("org-store-link", "Stores [[url][title]] as org link and copies url 
           });
 
 function org_remember (url, title, selection, window) {
-    var cmd_str = 'emacsclient \"org-protocol://remember://'+url+'/'+title+'/'+selection+'\"';
+    var cmd_str = 'emacsclient \"org-protocol://remember://w/'+url+'/'+title+'/'+selection+'\"';
     if (window != null) {
       window.minibuffer.message('Issuing ' + cmd_str);
     }
