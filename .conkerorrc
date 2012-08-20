@@ -2,8 +2,10 @@
 
 require("new-tabs.js");
 require("session.js");
-// require("favicon"); // XXX: added to conkeror 2010-12-29, not in squeeze
 
+// favicons
+require("favicon"); // XXX: added to conkeror 2010-12-29, not in squeeze
+add_hook("mode_line_hook", mode_line_adder(buffer_icon_widget), true);
 
 // function my_prefs () {
 // openDialog("chrome://browser/content/pref/pref.xul", "PrefWindow", "chrome,titlebar,resizable,modal", "catFeaturesbutton");
@@ -17,7 +19,7 @@ require("session.js");
 can_kill_last_buffer = false;
 
 // don't use a new window for the download buffer
-download_buffer_automatic_open_target = [OPEN_NEW_BUFFER_BACKGROUND, OPEN_NEW_WINDOW];
+download_buffer_automatic_open_target = OPEN_NEW_BUFFER_BACKGROUND;
 
 // number of milliseconds to wait before automatically closing hints mode
 hints_auto_exit_delay = 500;
