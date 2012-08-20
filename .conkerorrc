@@ -100,13 +100,18 @@ session_pref("signon.SignonFileName", "signons.txt");
 Components.classes["@mozilla.org/login-manager;1"]
     .getService(Components.interfaces.nsILoginManager);
 
+
 //// Remember the last save directory for downloads
+
+//cwd=get_home_directory(); 
+//cwd.append("Downloads"); 
 
 {
    let _save_path = get_home_directory();
 
    function update_save_path (info) {
        _save_path = info.target_file.parent.path;
+       window.minibuffer.message(_save_path);
    }
 
    add_hook("download_added_hook", update_save_path);
